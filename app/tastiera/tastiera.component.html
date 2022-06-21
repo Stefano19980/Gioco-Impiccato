@@ -1,0 +1,17 @@
+<div class="tastiera">
+    <br>
+    <span
+         *ngFor="let top of getTopArray()">
+         <app-bottone [valoreBottone]="top" (onValoreEmesso)="getControllo($event)"></app-bottone>
+    </span>
+    <br>
+    <span
+         *ngFor="let mid of getMidArray()">
+         <app-bottone [valoreBottone]="mid" (onValoreEmesso)="getControllo($event)"></app-bottone>
+    </span>
+    <br>
+    <span
+         *ngFor="let bot of getBotArray()">
+         <app-bottone [valoreBottone]="bot" (onValoreEmesso)="getControllo($event)"></app-bottone>
+    </span>
+    </div>

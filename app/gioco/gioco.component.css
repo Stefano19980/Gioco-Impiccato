@@ -1,0 +1,15 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div {
+    font-size: 20px;
+}
+
+h1,h2, .gioco, img, .counter, .win, .lose, .tastiera {
+    text-align: center;
+}
+

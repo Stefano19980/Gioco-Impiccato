@@ -1,0 +1,30 @@
+<div class="gioco">
+    <img src="/assets/{{ scegliImmagine() }}" alt="">
+    </div>
+    
+    <div>
+    <h2> {{ getParolaNascosta() }}</h2>
+    </div>
+
+
+    <app-tastiera></app-tastiera>
+   
+
+<div class="counter">
+    <h2> ERRORI {{ getTentativi() }} / 6</h2>
+</div>
+
+   <div class="row" *ngIf="getVittoria()">
+     <div class="win">
+          <h3 class="win">HAI VINTO!</h3>
+          <br>
+          <button class="btn btn-danger" (click)="ricominciaPartita()">RIGIOCA!</button>
+     </div>
+ </div>
+ 
+ <div class="row" *ngIf="getSconfitta()">
+     <div class="lose">
+         <h3 class="lose">HAI PERSO!</h3>
+         <h3 class="lose">LA PAROLA ERA: {{ getParola() }}</h3>
+         <button class="btn btn-danger" (click)="ricominciaPartita()">RIPROVA</button>
+     </div>
